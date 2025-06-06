@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript Programming langauge</title>
+     
+</head>
+<body>
+    <h1 id="heading">Hello Welcome to the Js World</h1>
+    <button onclick="changeText();">Click Me</button>
+    <h2 id="heading2"></h2>
+
+    <script>
+        
+    function changeText() {
+             let heading = document.getElementById("heading");
+        let text = heading.innerText;
+        if (text.includes("Js World")) {
+          // Agar "Js World" hai to replace karo
+          let updateText = text.replace("Js World", "Java Script Universe!");
+          heading.innerText = updateText;
+        } else {
+          // Agar "Js World" nahi hai to wapas le aao
+          let updateText = text.replace("Java Script Universe!", "Js World");
+          heading.innerText = updateText;
+        }
+      }
+    </script>
+</body>
+<script src="js.js"></script> 
+</html>
