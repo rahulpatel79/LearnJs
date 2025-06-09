@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some & Every</title>
+
+</head>
+<body>
+    <h1>Some and Every in js</h1>
+    <script>
+        var x = [10,20,30,40,50,60,90]
+
+        let y = x.some(chekcNum); // Some is pass the funcation and funcation is check the value in any condition to any value is true to return a value of true 
+        // some ko agr ek bhi condition true milti he to vah true return karega
+        document.write(y + "</br>");
+        let z = x.every(chekcNum); // agr ek bhi condtion false mili to false dega sabhi value true hona chahiye 
+        document.write(z)
+
+            
+        function chekcNum(x){ 
+            return x>18;
+        }
+    </script>
+</body>
+</html>
