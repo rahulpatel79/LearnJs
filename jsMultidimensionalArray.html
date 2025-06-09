@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiDimensional Array </title>
+</head>
+
+<body>
+    <h1>Multi-Dimensional Array</h1>
+
+
+    <script>
+        let students = [
+            ["Rahul", 21, "Male"],
+            ["Sneha", 22, "Female"],
+            ["Amit", 20, "Male"],
+            ["ram", 20, "Male"]
+        ];
+
+ 
+            document.write("<table border='1px'>")
+        for(let x = 0;  x<students.length; x++){
+            document.write("<tr>")
+            for(let y = 0; y<students[x].length; y++){
+
+                
+            document.write("<td>" + students[x][y] + "</td>");
+
+        }
+            document.write("</tr>")
+        }
+document.write("</table> ")
+
+
+    </script>
+</body>
+
+</html>
