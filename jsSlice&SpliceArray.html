@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Slice & Splice Array</title>
+</head>
+<body>
+    <h1>Js Slice & Splice Array</h1>
+    <script>
+        var arr = ["Rahul Patel", 22, "Male", "B.tech", "Khar kalan"]
+        document.write(arr + "</br></br>")
+        var x = arr.slice(1, 3)// isme start value 1 index 0 to 1 se start huaa or kaha tk jana he jese ki 3 yani b.tech tk 
+                               //  to inke bich ka nickal dega,
+                               // 1 se start yani ki 22 se start or 3 pe end yani ki 22 or male
+        document.write(x);
+        // var y = arr.splice(index, HowMany, delete);
+        var y = arr.splice(0, 1, "Hello"); // Adds "Hello" at index 1, deletes 0 items
+        document.write(y)
+        
+    </script>
+</body> 
+</html>

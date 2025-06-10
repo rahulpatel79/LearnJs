@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js</title>
+
+</head>
+<body>
+    <h1>Js Object </h1>
+
+    <script>
+        let x = {
+            fname : "rahul",
+            lname : "patel",
+            age : 23,
+            email : "eeee@gmail.com",
+            name : ['ram', 'Harry', 'Amit'],
+            salary : function(){
+                return 300000;
+            },
+            fullname : function(){
+                return this.fname + " " + this.lname;
+             }
+             ,
+             living : {
+                city: "indore",
+                contry : "India",
+             }
+        }
+
+        document.write(x.name); // display the name ram, harry and amit
+        console.log(x) // console print all object
+        console.log(x.name) // console print only names
+        console.log(x.salary()) // print salary
+        console.log(x.fullname()) // print full name
+        console.log(x.living) // print living cityes
+
+  
+
+    </script>
+</body>
+</html>
