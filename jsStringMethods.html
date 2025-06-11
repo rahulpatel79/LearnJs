@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js String Methods</title>
-</head>
-<body>
-<h1>Js String Methods</h1>
+  </head>
+
+  <body>
+    <h1>Js String Methods</h1>
     <script>
-        let a  = "Rahul Patel"
-        let b = a.length; // this is lenght method
-        document.writeln(b + "</br>");
-        
-        b = a.toLowerCase() // this is Lowercash method all charactores are small in all string
-        document.writeln(b);
+      let a = "Rahul          Patel";
+      let c = "Welcome";
+      let e = 100;
+      let b = a.length; // this is lenght method
+      document.writeln(b + "</br>");
 
-        
+      b = a.toLowerCase(); // this is Lowercash method all charactores are small in all string
+      document.writeln(b + "</br>");
+
+      b = a.includes("patel"); // it is case sensitive
+      document.writeln(b + "</br>"); // false return true or false
+
+      b = a.startsWith("ra"); // it is case sensitive
+      document.writeln(b + "</br>"); // true return true or false
+
+      b = a.endsWith("Patel"); // it is case sensitive
+      document.writeln(b + "</br>"); // return true or false
+
+      b = a.search("R"); // it is case sensitive
+      document.writeln(b + "</br>"); // index deta he or only understand first charactore
+
+      b = a.match(/a/g); // it is case sensitive or find krta he kitni bar
+      document.writeln(b + "</br>"); // array form me return karega
+
+      b = a.indexOf("P"); // it is case sensitive or first value ko check krta he sirf
+      document.writeln(b + "</br>"); // return true or false
+
+      b = a.lastIndexOf("el"); //  it is case sensitive or first value ko check krta he sirf
+      document.writeln(b + "</br>"); // return true or false
+
+      b = a.replace("Rahul", "Raja"); //  it is case sensitive or string ko find karega fir use replace karega
+      document.writeln(b + "</br>"); //
+
+      b = a.trim(); //  it is case sensitive or extra space ko remove krta he
+      document.writeln(b + "</br>"); //  remove extra space
+
+      b = a.charAt(3); //  get the current value of char
+      document.writeln(b + "</br>"); //
+
+      b = a.charCodeAt(4); //  keyboard me number pata lga skte he ki kon se number pe keyword he
+      document.writeln(b + "</br>"); //
+
+      b = String.fromCharCode(97); // retur the number to char
+      document.writeln(b + "</br>"); //
+
+      b = a.concat(" " + c); // concat the String and use multiple elements like (v,f,a)
+      document.writeln(b + "</br>"); //
+
+      b = String.fromCharCode(97); // retur the number to char
+      document.writeln(b + "</br>"); //
+
+      b = a.repeat(2); // mulitple times print means reapting 
+      document.writeln(b + "</br>"); //
+
+      b = a.slice(2); // remove char frome String isme last value dekhne ko milti he 
+      document.writeln(b + "</br>"); //
+
+      b = a.substr(5, 3); //  but substring me last value dekhne ko nhi milti he 
+      document.writeln(b + "</br>"); //
+
+      b = e.toString(); //   conver to string formate in number
+      document.writeln(b + 20 + "</br>"); // // add a number 
+
     </script>
-
-</body>
+  </body>
 </html>
