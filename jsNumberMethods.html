@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods in Js</title>
+</head>
+<body>
+    <h1>Number Methods In Java Script</h1>
+
+    <script>
+         let a = "100";
+         let b = Number(a) // change type String to number 
+         document.writeln((typeof(a) + "<br>")) 
+         document.writeln((typeof(b) + "<br>")) 
+         document.writeln(b + "<br>")
+
+        let c = 102.56;
+        let d = parseInt(c); // conver to parse parse int
+         document.writeln(d + "<br>") // 
+
+        let e = 102.567; // ager .00 huaa to remove kr dega ye .00 show nhi karega or agr . ke bad kuch number he to show karega 
+        let f = parseFloat(e); // conver to parse parse int
+        let g = Number.isInteger(e) // agr . ke bad kuch he to false return karega or nhi he to true return karega
+        let h = e.toFixed(2); // decimal ke bad ke number fix kr dega kitne hone chahiye round figer me krta he dhyan rkhna thik he 
+        let i =e.toPrecision(3); // conver roundfiger and given a integer value 
+
+        document.writeln(f + "<br>") // 
+        document.writeln(g + "<br>") //  false Or true
+        document.writeln(h + "<br>") //  
+        document.writeln(i + "<br>") //  
+
+
+
+
+
+
+
+         
+        
+         
+
+         
+
+    </script>
+</body>
+</html>
