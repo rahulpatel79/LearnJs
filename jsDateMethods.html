@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+</head>
+<body>
+    <h1>Date Methods</h1>
+    <script>
+        let d = new Date();
+
+        document.writeln(d + "<br/>"); // get a full date 
+         document.writeln(d.getDate() + "<br/>"); // get a current date only
+         document.writeln(d.toDateString() + "<br/>"); //  
+         document.writeln(d.getFullYear() + "<br/>"); //  
+         document.writeln(d.getMonth() + "<br/>"); //  
+         document.writeln(d.getDay() + "<br/>"); //  
+         document.writeln(d.getHours() + "<br/>"); //  
+         document.writeln(d.getMinutes() + "<br/>"); //  
+         document.writeln(d.getSeconds() + "<br/>"); //  
+         document.writeln(d.getMilliseconds() + "<br/>"); //  
+         document.writeln( "<br/>"); //  
+         d.setDate(23);
+         d.setFullYear(2024); 
+         d.setMonth(3);
+         
+         
+         
+         document.writeln(d + " <br/>"); // get a current date only
+        // how to get date 
+        document.write(d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear());
+        
+                
+    </script>
+</body>
+</html>
