@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasAttribute</title>
+</head>
+<body>
+    <h1>hasAttribute</h1>
+    <div id="box" class="container"></div>
+
+    <script>
+        // Check karta hai ki kisi element ke paas koi specific attribute hai ya nahi.
+  let box = document.getElementById("box");
+
+  console.log(box.hasAttribute("class")); // true
+  console.log(box.hasAttribute("style")); // false
+  
+    </script>
+</body>
+</html>
